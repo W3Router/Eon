@@ -97,6 +97,7 @@
             margin-bottom: 1.5rem; /* 增大行间距 */
         }
         
+
 /* Solution Section Styles */
 #solution {
     padding: 4rem 2rem;
@@ -104,7 +105,7 @@
 
 .solution-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* 改为顶部对齐 */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -124,6 +125,27 @@
     flex: 1;
     padding-left: 2rem;
 }
+
+.solution-content h2 {
+    margin: 0;  /* 移除标题的默认边距 */
+    margin-bottom: 2rem; /* 标题下方增加间距 */
+}
+
+.solution-content ul {
+    list-style: none;  /* 移除列表项前的点 */
+    padding: 0;
+    margin: 0;
+}
+
+.solution-content ul li {
+    margin-bottom: 2rem; /* 增加列表项之间的间距 */
+    line-height: 1.5;
+}
+
+.solution-content ul li:last-child {
+    margin-bottom: 0; /* 最后一项不需要底部间距 */
+}
+
 
 
         .nav-brand img {

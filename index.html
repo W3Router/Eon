@@ -78,30 +78,6 @@
         .nav-link:hover {
             color: var(--primary-color);
         }
-
-/* Solution部分样式 */
-.solution {
-    margin: 80px 0 40px;
-    padding: 0 20px;
-}
-
-.solution-step {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.solution-step img {
-    width: 50%;
-    max-width: 300px;
-    height: auto;
-}
-
-.solution-step-content {
-    flex: 1;
-}
-
 /* 样式省略 */
         .solution-section {
             display: flex;
@@ -121,6 +97,35 @@
             margin-bottom: 1.5rem; /* 增大行间距 */
         }
         
+/* Solution Section Styles */
+#solution {
+    padding: 4rem 2rem;
+}
+
+.solution-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-image {
+    flex: 1;
+}
+
+.solution-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.solution-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+
         .nav-brand img {
             height: 40px;
             
@@ -310,6 +315,18 @@
            .form-group label {
                 margin-bottom: 0.5rem;
             }
+    .solution-container {
+        flex-direction: column;
+    }
+
+    .solution-image {
+        order: -1; /* 将图片移到最上面 */
+    }
+
+    .solution-content {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
         }
 
 /* 更新合作伙伴部分样式 */
@@ -566,19 +583,7 @@ footer p {
     margin-right: 0;
     margin-bottom: 0.5rem;
   }
-    .solution-step {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .solution-step img {
-        width: 100%;
-        max-width: 250px;
-        margin-bottom: 15px;
-    }
 }
-
-
 .social-links {
   padding: 2rem 0;
   background: #1a1a1a;
@@ -663,7 +668,7 @@ footer p {
     </section>
 
  <!-- Solution Section -->
-    <!-- Solution Section -->
+    <!-- Solution Section 
     <section id="solution" class="section solution-section">
         <div style="flex: 1;">
             <img src="images/solution.jpg" alt="Solution Image" style="width: 100%;">
@@ -679,6 +684,26 @@ footer p {
             </ul>
         </div>
     </section>
+-->
+
+<section id="solution" class="section solution-section">
+    <div class="solution-container">
+        <div class="solution-image">
+            <img src="images/solution.jpg" alt="Solution Image">
+        </div>
+        <div class="solution-content">
+            <h2>Our Solution</h2>
+            <ul>
+                <li>Reducing computation costs via distributed network</li>
+                <li>A: After data is encrypted, it is segmented into small parts</li>
+                <li>B: These data fragments are processed through distributed computation</li>
+                <li>C: The distributed network enhances computational efficiency</li>
+                <li>D: Processing time improves while privacy is maintained</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="section">
